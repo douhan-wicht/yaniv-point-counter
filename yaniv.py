@@ -6,7 +6,9 @@ players = {}
 # Function to add a player and their initial point
 def add_player():
     player_name = player_entry.get()
+    player_entry.focus_set()
     point = point_entry.get()
+    point_entry.focus_set()
     players[player_name] = int(point)
     player_entry.delete(0, tk.END)
     point_entry.delete(0, tk.END)
